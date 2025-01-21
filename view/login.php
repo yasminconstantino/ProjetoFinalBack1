@@ -44,7 +44,7 @@
     <section class="loginTutor">
     <div class="form-container">
       <form id="login-form" method="POST" action="/projetoback/controller/autenticaT.php" enctype="multipart/form-data">
-        <h2>Login do Tutor</h2>
+        <h2>Login</h2>
         <input type="email" name="email" placeholder="Digite seu email" required>
         <input type="password" name="password" placeholder="Digite sua senha" required>
         <?php if (isset($_SESSION['message'])): ?>

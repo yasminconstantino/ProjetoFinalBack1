@@ -1,4 +1,4 @@
-**FindVet - Conectando Tutores e Veterinários**  
+# **FindVet - Conectando Tutores e Veterinários**  
 
 ### **Propósito do Projeto**  
 A **FindVet** é um aplicativo projetado para conectar tutores de animais de estimação com veterinários, simplificando a busca por serviços veterinários e promovendo um cuidado mais eficiente para os pets. Ele ainda está em suas fases iniciais de desenvolvimento e irá oferecer funcionalidades como agendamento de consultas, gerenciamento de informações dos pets e comunicação direta entre veterinários e tutores. A solução busca digitalizar e otimizar os processos envolvidos no cuidado animal, trazendo praticidade e organização para tutores e profissionais da área.  

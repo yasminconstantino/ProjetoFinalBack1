@@ -19,28 +19,6 @@
       </div>
     </div>
 
-    <!-- Login Vet ocultado por enquanto pq foquei no de tutor p ter algo funcional e sem ter que dividir as paginas e os fluxos, que sao praticamente iguais
-
-    <section class="loginVet">
-    <div class="form-container">
-      <form id="login-form" method="POST" action="/controller/autenticaV.php">
-        <h2>Login do Veterinario</h2>
-        <input type="email" name="email" placeholder="Digite seu email" required>
-        <input type="password" name="password" placeholder="Digite sua senha" required>
-        <?//php if (isset($_SESSION['message'])): ?>
-          <div class="message">
-            <?/*php echo htmlspecialchars($_SESSION['message']);
-            unset($_SESSION['message']);*/ ?>
-          </div>
-        <?//php endif; ?>
-        <button type="submit" name="login">Entrar</button>
-        <p>Não tem uma conta? <a href="index.php?page=register">Crie agora</a></p>
-      </form>
-    </div>
-    </section>-->
-
-        <!-- Login Tutor-->
-
     <section class="loginTutor">
     <div class="form-container">
       <form id="login-form" method="POST" action="/projetoback/controller/autenticaT.php" enctype="multipart/form-data">

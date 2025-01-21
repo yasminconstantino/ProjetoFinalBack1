@@ -32,7 +32,7 @@ if (isset($_POST['login'])) {
 if (isset($_POST['register'])) {
   $nomeTutor = $_POST['nomeTutor'];
   $email = $_POST['email'];
-  $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT); // Hash da senha
+  $senha = $_POST['senha']; // Hash da senha
   $dtNasc = $_POST['dtNasc'];
   $cpf = $_POST['CPF'];
   $numTel = $_POST['numTel'];

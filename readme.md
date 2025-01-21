@@ -50,6 +50,8 @@ Desenvolver uma plataforma digital acessível e eficiente que facilite a comunic
    - Cadastro de informações detalhadas dos pets, como nome, espécie, raça, data de nascimento, sexo e cor.  
    - Edição e exclusão de informações de pets.  
 
+---
+
 ### **Implementações futuras**
 
 1. **Agendamento de Consultas:**  

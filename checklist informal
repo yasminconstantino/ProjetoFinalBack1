@@ -1,0 +1,100 @@
+faz login tutor
+exibe pets do tutor logado
+// busca pet por todos os parametros
+// exibe o pet buscado
+busca o vet por parametro
+exibe o vet
+exibe todos os vets disponiveis
+ acessa perfis individuais pet e vet
+altera foto sem quebrar o resto, 
+acessa form cad pet no perfil do tutor
+cadastra, edita e deleta pet
+
+A análise dos códigos apresentados, com base nos **critérios de avaliação do projeto**, está organizada a seguir:
+
+---
+
+### **1. Objetivos da disciplina (coerência entre proposta e funcionalidades):**
+- **Observação:** O sistema apresentado foca em funcionalidades básicas de CRUD e interações entre os atores principais (tutores, pets e veterinários). A proposta está coerente com o objetivo de desenvolvimento web utilizando PHP e PDO.
+- **Avaliação:** Atende ao critério, pois há manipulação de banco de dados, organização modular de funções e implementação de diferentes páginas.
+
+---
+
+### **2. Três CRUDs completos (inserção, alteração, exclusão):**
+- Para **Tutores**:
+  - **Inserção:** Realizada pela função `registerTutor`.
+  - **Alteração:** Implementada na página de perfil com a função `updateTutor`.
+  - **Exclusão:** Implementada por meio da função `deleteTutor`.
+
+- Para **Pets** e **Veterinários**:
+  - Os códigos não foram detalhados aqui, mas o texto menciona que há páginas similares para pets e veterinários. Se as funcionalidades dessas páginas replicam o que foi feito para tutores, o critério de CRUD completo será atendido.
+
+- **Avaliação:** Provavelmente atende ao critério, mas é necessário confirmar se as páginas de pets e veterinários têm CRUD completo implementado de forma funcional.
+
+---
+
+### **3. Aplicação diferenciada dos CRUDs (complexidade maior):**
+- **Busca por veterinários:** Existe uma funcionalidade de pesquisa avançada baseada em especialidades e nomes, que pode ser considerada uma aplicação mais complexa.
+- **Integração entre tutores e pets:** Cada tutor só consegue acessar os pets vinculados ao seu perfil, o que demonstra uma lógica de controle por relacionamento.
+
+- **Avaliação:** Atende ao critério, pois existe ao menos uma funcionalidade diferenciada (busca).
+
+---
+
+### **4. Autenticação de usuário e upload de arquivo:**
+- **Autenticação:** Implementada no sistema. Tutores precisam estar logados para acessar funcionalidades restritas, como visualizar ou editar o perfil e os pets.
+- **Upload de arquivo:** Implementado no perfil do tutor, permitindo alterar a foto de perfil.
+
+- **Avaliação:** Atende ao critério.
+
+---
+
+### **5. Utilização de classes para manipulação do banco de dados (PDO):**
+- **Uso de PDO:** O sistema utiliza `prepare` e `execute` para interagir com o banco de dados em todas as funções apresentadas, como `getTutorInfo`, `updateTutor`, `deleteTutor`, etc.
+- **Criação de classes:** Os exemplos fornecidos utilizam funções para manipulação do banco de dados, mas **não utilizam classes**, o que é um requisito. Para atender ao critério, seria necessário encapsular as operações do banco de dados em classes específicas (por exemplo, uma classe `Tutor` com métodos como `insert()`, `update()`, etc.).
+
+- **Avaliação:** **Não atende ao critério** em sua totalidade, pois não utiliza classes.
+
+---
+
+### **6. Hospedagem do sistema em servidor gratuito:**
+- **Hospedagem:** O sistema utiliza caminhos absolutos no servidor local (por exemplo, `/opt/lampp/htdocs/`), o que indica que ainda não foi hospedado. Não há evidências de configuração para ambiente remoto ou tentativa de justificativa para problemas na hospedagem.
+  
+- **Avaliação:** **Não atende ao critério**, mas pode ser resolvido se o projeto for configurado e hospedado em serviços gratuitos como Heroku, 000webhost, ou Railway.
+
+---
+
+### **Comentários e Observações Gerais**
+1. **Validação de Campos:**
+   - O sistema exige campos obrigatórios nos formulários com o atributo `required`, mas não foram apresentadas validações mais complexas (como formato de e-mail, CPF, ou telefone) no backend.
+
+2. **Segurança:**
+   - A senha do usuário está sendo armazenada sem criptografia. É necessário utilizar `password_hash` e `password_verify` para garantir segurança.
+
+3. **Organização do Código:**
+   - Apesar de funcional, o código pode ser refatorado para usar classes, reduzindo repetição e melhorando a estrutura.
+
+4. **Estilo e Usabilidade:**
+   - O sistema demonstra cuidado com estilos e usabilidade básica (links de navegação, mensagens de sucesso/erro). A interface atende ao objetivo do trabalho.
+
+---
+
+### **Resumo da Avaliação**
+| **Critério**                                    | **Avaliação**             |
+|-------------------------------------------------|---------------------------|
+| Objetivos da disciplina                         | ✅ Atende                 |
+| CRUDs completos (mínimo 3 tabelas)             | ✅ Provavelmente atende   |
+| Aplicação diferenciada                          | ✅ Atende                 |
+| Autenticação e upload                           | ✅ Atende                 |
+| Uso de classes e PDO                            | ❌ Não atende totalmente  |
+| Hospedagem em servidor gratuito                 | ❌ Não atende             |
+
+---
+
+### **Sugestões para Ajustes**
+1. Refatore o código para utilizar classes no lugar de funções isoladas, garantindo que o critério seja plenamente atendido.
+2. Realize a hospedagem do sistema em um servidor gratuito e documente eventuais dificuldades, caso não seja possível.
+3. Melhore a segurança, incluindo a criptografia de senhas no cadastro/edição de usuários.
+4. Verifique a implementação completa dos CRUDs para pets e veterinários e adicione validações de campos mais robustas no backend.
+
+Se precisar de ajuda para ajustar algum ponto específico, é só avisar! 🚀
